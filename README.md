@@ -3,6 +3,15 @@
 This project is based on the roadmap.sh challenge:
 https://roadmap.sh/projects/single-page-cv
 
+## Live Demo
+
+Demo version:
+https://single-page-cv-two-pi.vercel.app/
+
+## Preview
+
+![Single Page CV Preview](preview.png)
+
 It is part of my personal series of projects created to refresh core front-end fundamentals and test new solutions available in Vanilla CSS, HTML and JS.
 
 ## Project Goal
