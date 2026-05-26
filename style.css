@@ -1,0 +1,149 @@
+:root {
+	--bg-white: #ffffff;
+	--text-black: #111111;
+	--secondary-blue: #0066cc;
+	--line-color: #111111;
+	--muted-text: #333333;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 2rem 1.25rem 3rem;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.55;
+	color: var(--text-black);
+	background: var(--bg-white);
+}
+
+header,
+main,
+footer {
+	width: min(100%, 980px);
+	margin: 0 auto;
+}
+
+header {
+	padding-bottom: 1rem;
+}
+
+header > p:first-child {
+	display: inline-block;
+	margin-bottom: 0.75rem;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: var(--secondary-blue);
+}
+
+h1 {
+	margin: 0 0 0.75rem;
+	font-size: clamp(2rem, 4.5vw, 2.9rem);
+	font-weight: 800;
+	line-height: 1.15;
+}
+
+h2 {
+	margin: 0 0 0.9rem;
+	font-size: 1.15rem;
+	font-weight: 800;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: var(--secondary-blue);
+}
+
+h3 {
+	margin: 0;
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+p {
+	margin: 0 0 0.9rem;
+	color: var(--text-black);
+}
+
+a {
+	color: var(--text-black);
+	text-decoration-thickness: 1px;
+	text-underline-offset: 2px;
+}
+
+a:hover {
+	color: var(--secondary-blue);
+}
+
+.section-divider {
+	width: min(100%, 980px);
+	margin: 0 auto 1.4rem;
+	border: 0;
+	border-top: 2px solid var(--line-color);
+}
+
+main {
+	display: grid;
+	gap: 1rem;
+}
+
+section {
+	padding: 1rem 0 0.75rem;
+	border-top: 1px solid #d9d9d9;
+}
+
+section:first-child {
+	border-top: 0;
+	padding-top: 0;
+}
+
+article {
+	margin-bottom: 1rem;
+	padding-left: 0.75rem;
+	border-left: 3px solid var(--secondary-blue);
+}
+
+article > p {
+	margin-top: 0.25rem;
+	color: var(--muted-text);
+	font-size: 0.95rem;
+}
+
+ul {
+	margin: 0.5rem 0 0.15rem;
+	padding-left: 1.15rem;
+}
+
+li {
+	margin: 0 0 0.45rem;
+}
+
+footer {
+	margin-top: 2rem;
+	padding-top: 1rem;
+	border-top: 2px solid var(--line-color);
+}
+
+footer p {
+	margin: 0;
+	font-size: 0.85rem;
+	color: var(--muted-text);
+}
+
+@media (max-width: 720px) {
+	body {
+		padding: 1.2rem 0.95rem 2rem;
+	}
+
+	article {
+		padding-left: 0.6rem;
+	}
+}
+
+
